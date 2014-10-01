@@ -79,7 +79,7 @@ To have the content fits to the main area, use `fit` attribute.
     
   </style>
 
-  <core-drawer-panel id="drawerPanel" narrow="{{narrow}}" responsiveWidth="{{responsiveWidth}}">
+  <core-drawer-panel id="drawerPanel" narrow="{{narrow}}" drawerWidth="{{drawerWidth}}" responsiveWidth="{{responsiveWidth}}">
 
     <div vertical layout drawer>
 
@@ -106,6 +106,15 @@ To have the content fits to the main area, use `fit` attribute.
   Polymer('core-scaffold', {
     
     publish: {
+      /**
+       * Width of the drawer panel.
+       *
+       * @attribute drawerWidth
+       * @type string
+       * @default '256px'
+       */
+      drawerWidth: '256px',
+      
       /**
        * When the browser window size is smaller than the `responsiveWidth`, 
        * `core-drawer-panel` changes to a narrow layout. In narrow layout, 
